@@ -1,0 +1,225 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif {
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
+.btn-group {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+}
+
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #e94d58;
+}
+
+button:nth-child(2) {
+    margin-right: -200px;
+    background: white;
+    color: #e94d58;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="question">Are you interested?</h2>
+        <img class="gif" src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp" alt="GIF">
+        <div class="btn-group">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+  const w = document.querySelector(".wrapper");
+  const q = document.querySelector(".question");
+  const g = document.querySelector(".gif");
+  const yB = document.querySelector(".yes-btn");
+  const nB = document.querySelector(".no-btn");
+
+  yB.addEventListener("click", () => {
+    q.innerHTML = "Aaaaa, I like you too";
+    g.src = "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+    
+    // Menyembunyikan tombol "No"
+    nB.style.display = "none";
+  });
+
+  nB.addEventListener("mouseover", () => {
+    const nBRect = nB.getBoundingClientRect();
+    const mX = window.innerWidth - nBRect.width;
+    const mY = window.innerHeight - nBRect.height;
+
+    const rX = Math.floor(Math.random() * mX);
+    const rY = Math.floor(Math.random() * mY);
+
+    nB.style.left = rX + "px";
+    nB.style.top = rY + "px";
+  });
+});
+
+
+    </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif {
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
+.btn-group {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+}
+
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #e94d58;
+}
+
+button:nth-child(2) {
+    margin-right: -200px;
+    background: white;
+    color: #e94d58;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="question">Are you interested?</h2>
+        <img class="gif" src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp" alt="GIF">
+        <div class="btn-group">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+  const w = document.querySelector(".wrapper");
+  const q = document.querySelector(".question");
+  const g = document.querySelector(".gif");
+  const yB = document.querySelector(".yes-btn");
+  const nB = document.querySelector(".no-btn");
+
+  yB.addEventListener("click", () => {
+    q.innerHTML = "Aaaaa, I like you too";
+    g.src = "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+    
+    // Menyembunyikan tombol "No"
+    nB.style.display = "none";
+  });
+
+  nB.addEventListener("mouseover", () => {
+    const nBRect = nB.getBoundingClientRect();
+    const mX = window.innerWidth - nBRect.width;
+    const mY = window.innerHeight - nBRect.height;
+
+    const rX = Math.floor(Math.random() * mX);
+    const rY = Math.floor(Math.random() * mY);
+
+    nB.style.left = rX + "px";
+    nB.style.top = rY + "px";
+  });
+});
+
+
+    </script>
+</body>
+</html>
+>>>>>>> dd4ea3d8942b27cb8fd8165c07bd2453384b20bc
